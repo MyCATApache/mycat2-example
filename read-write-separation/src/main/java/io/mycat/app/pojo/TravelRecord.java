@@ -14,6 +14,7 @@
  */
 package io.mycat.app.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -46,5 +47,50 @@ public class TravelRecord {
 
   public void setDays(long days) {
     this.days = days;
+  }
+
+  /**
+   * Getter for property 'id'.
+   *
+   * @return Value for property 'id'.
+   */
+  public long getId() {
+    return id;
+  }
+
+  /**
+   * Getter for property 'userId'.
+   *
+   * @return Value for property 'userId'.
+   */
+  public long getUserId() {
+    return userId;
+  }
+
+  /**
+   * Getter for property 'travelDate'.
+   *
+   * @return Value for property 'travelDate'.
+   */
+  public Date getTravelDate() {
+    return travelDate;
+  }
+
+  /**
+   * Getter for property 'fee'.
+   *
+   * @return Value for property 'fee'.
+   */
+  public BigDecimal getFee() {
+    return fee;
+  }
+
+  /**
+   * Getter for property 'days'.
+   *
+   * @return Value for property 'days'.
+   */
+  public long getDays() {
+    return days;
   }
 }
