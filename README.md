@@ -14,7 +14,7 @@ http://localhost:8080/swagger-ui.html#/
 
 2.代码越简单越好,不要引入私货
 
-3.mycat的使用的测试schema是test,table是travelrecord
+3.mycat的使用的测试schema是test,test2,test3,test4,table是travelrecord,travelrecord2,travelrecord3....
 
 ```sql
 CREATE TABLE `travelrecord` ( `id` bigint(20) NOT NULL, `user_id` varchar(100) DEFAULT NULL,
