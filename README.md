@@ -1,1 +1,1 @@
-# MyApplicationArchitecture
+# Mycat-example
