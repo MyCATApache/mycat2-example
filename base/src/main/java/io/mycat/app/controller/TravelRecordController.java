@@ -2,6 +2,7 @@ package io.mycat.app.controller;
 
 import io.mycat.app.mapper.TravelRecordMapper;
 import io.mycat.app.pojo.TravelRecord;
+import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,5 +25,10 @@ public class TravelRecordController {
     TravelRecord travelRecord = travelRecordMapper.findById(id);
     return travelRecord;
   }
-
+  @GetMapping("/list")
+  @ResponseBody
+  public List<TravelRecord> list() {
+    List<TravelRecord> list = travelRecordMapper.list();
+    return list;
+  }
 }
